@@ -14,7 +14,10 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #161616;
+    background: url('./assets/bg/IndexA01.png') no-repeat center fixed;
+    background-size: cover;
+    /* background: #222; */
+    /* background: radial-gradient(50% 50% at 50% 50%, rgba(74, 74, 74, 0.2) 0%, rgba(74, 74, 74, 0.35) 74.97%, rgba(74, 74, 74, 0.5) 100%); */
 }
 
 section .circle {
@@ -23,7 +26,7 @@ section .circle {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e51e2a;
+    background: #a3bbe1c5;
     clip-path: circle(70% at right -20%);
 }
 
@@ -36,11 +39,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(180deg, #212224 0%, rgba(33, 34, 36, 0.65) 58.33%, rgba(33, 34, 36, 0) 100%);
 }
 
 header .logo {
     position: relative;
-    max-width: 150px;
+    max-width: 192px;
 }
 
 header .navigation {
@@ -57,21 +61,26 @@ header .navigation li a {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    margin-top: 40px;
+    margin-left: 60px;
 }
 
 .content {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    width: 635px;
+    /* margin-top: 20px; */
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
 .content .textBox {
     position: relative;
-    max-width: 600px;
-    margin-right: 20px;
+    max-width: 595px;
+    margin-left: 40px;
+    /* margin-right: 20px; */
 }
 
 .content .textBox h2 {
@@ -83,25 +92,32 @@ header .navigation li a {
 }
 
 .content .textBox p {
-    color: #fff;
+    color: #c8c7cc;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 36px;
+    text-align: justify;
 }
 
 .content .textBox a {
     display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #e51e2a;
+    margin-top: 80px;
+    padding: 16px 40px;
+    background: #A3BBE1;
     color: #fff;
     border-radius: 40px;
+    font-style: normal;
     font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 4px;
     text-decoration: none;
 }
 
 .sci {
-    position: absolute;
-    bottom: 40px;
-    left: 100px;
+    position: relative;
+    /* bottom: 40px;
+    left: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +130,7 @@ header .navigation li a {
 .sci li a {
     display: inline-block;
     margin-left: 15px;
-    background: #222;
+    background: #4a4a4a;
     width: 50px;
     height: 50px;
     display: flex;
@@ -125,7 +141,7 @@ header .navigation li a {
 }
 
 .sci li a:hover {
-    background: #e51e2a;
+    background: #A3BBE1;
     transform: translateY(-10px);
 }
 
@@ -150,13 +166,12 @@ header .navigation li a {
 }
 
 .content .imgBox {
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
 }
 
 .content .imgBox img {
-    max-width: 150px;
+    position: relative;
+    max-width: 504px;
 }
 
 .swiper-slide img {
